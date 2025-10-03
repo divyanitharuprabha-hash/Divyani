@@ -1,6 +1,7 @@
 /* General styles */
 body {
   background-color: #8d4a4a;
+  border-image-width:auto;
 }
 .box {
   width: 50px;             /* Content width */
