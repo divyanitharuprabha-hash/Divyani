@@ -1,14 +1,14 @@
 /* General styles */
 body {
-  background-color: #8d4a4a;
+  background-color: #2c619e;
   border-image-width:auto;
 }
 .box {
   width: 50px;             /* Content width */
   height: 50px;            /* Content height */
-  background: rgb(168, 119, 86);    /* Content background */
+  background: rgb(218, 222, 226);    /* Content background */
   
   padding: 20px;            /* Space inside */
-  border: 5px solid rgb(172, 170, 170);   /* Border */
+  border: 5px solid rgb(6, 16, 44);   /* Border */
   margin: 30px;             /* Space outside */
 }
