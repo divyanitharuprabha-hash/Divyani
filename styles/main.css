@@ -13,7 +13,7 @@ img{ width :auto;
 }
 a {
     text-decoration: none;
-    color: #0b2746; /* A professional blue accent */
+    color: #0b233f; /* A professional blue accent */
     transition: color 0.3s;
 }
 
@@ -34,7 +34,7 @@ a:hover {
 .logo {
     font-size: 1.8em;
     font-weight: bold;
-    color: #007bff; /* Use the accent color for the lab name */
+    color: #1e2f41; /* Use the accent color for the lab name */
     align-content: center;
 }
 
@@ -50,7 +50,7 @@ a:hover {
 }
 
 .main-nav a {
-    color: #333;
+    color: #af1e1e;
     font-weight: 500;
 }
 
@@ -60,7 +60,7 @@ a:hover {
 
 /* --- Hero Section (The main banner) --- */
 .hero-section {
-    background-color: #e9ecef;
+    background-color: #49964d;
     padding: 100px 5%;
     text-align: center;
     margin-bottom: 40px;
