@@ -35,6 +35,7 @@ a:hover {
     font-size: 1.8em;
     font-weight: bold;
     color: #007bff; /* Use the accent color for the lab name */
+    align-content: center;
 }
 
 .main-nav ul {
