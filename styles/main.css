@@ -1,58 +1,153 @@
-/* style.css */
-
-/* 1. Basic Reset */
-* {
+/* --- Global Styles --- */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Crucial for consistent sizing */
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Light, clean background */
+    color: #333; /* Dark text for readability */
+}
+img{ width :auto;
+  height: auto;
+
+}
+a {
+    text-decoration: none;
+    color: #007bff; /* A professional blue accent */
+    transition: color 0.3s;
 }
 
-/* 2. Main Navigation Bar Container */
-.navbar {
-    background-color: #2c3e50; /* Dark Blue Background */
-    padding: 15px 30px; /* Space inside the bar */
-    
-    /* FLEXBOX for horizontal layout and alignment */
+a:hover {
+    color: #0056b3;
+}
+
+/* --- Header & Navigation --- */
+.site-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 5%;
     display: flex;
-    justify-content: space-between; /* Pushes the logo left and links right */
-    align-items: center; /* Vertically center all items */
-    font-family: 'Arial', sans-serif;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* 3. Logo Styling */
-.logo a {
-    color: white;
-    font-size: 1.8em; /* Large, noticeable text */
+.logo {
+    font-size: 1.8em;
     font-weight: bold;
-    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Use the accent color for the lab name */
 }
 
-/* 4. Navigation Links List */
-.nav-links {
-    list-style: none; /* Removes the default bullets */
-    display: flex; /* Makes the list items go side-by-side */
-    gap: 25px; /* Adds space between the links */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-/* 5. Individual Link Styling */
-.nav-links a {
-    color: #ecf0f1; /* Light text color */
-    text-decoration: none; /* Removes the underline */
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+.main-nav li {
+    margin-left: 25px;
 }
 
-/* 6. Hover Effect for Interactivity */
-.nav-links a:hover {
-    background-color: #34495e; /* Slightly darker background on hover */
-    color: #ffffff;
+.main-nav a {
+    color: #333;
+    font-weight: 500;
 }
 
-/* Optional: Make it stick to the top when scrolling */
-header {
-    width: 100%;
-    position: sticky; /* or 'fixed' if you want it to cover content */
-    top: 0;
-    z-index: 1000; /* Ensures the nav bar stays above other content */
+.main-nav a:hover {
+    color: #007bff;
 }
+
+/* --- Hero Section (The main banner) --- */
+.hero-section {
+    background-color: #e9ecef;
+    padding: 100px 5%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    color: #212529;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 20px auto 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745; /* A success/green color for call to action */
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1e7e34;
+}
+
+/* --- Content Sections --- */
+.content-section {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* --- Service Cards --- */
+.service-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Simple hover effect */
+}
+
+.card h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+/* --- Footer --- */
+.site-footer {
+    background-color: #343a40; /* Dark, solid footer */
+    color: white;
+    padding: 30px 5%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+
