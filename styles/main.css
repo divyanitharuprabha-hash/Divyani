@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #359ac9; /* Light, clean background */
-    color: #333; /* Dark text for readability */
+    background-color: #e47ea8; /* Light, clean background */
+    color: #d63c3c; /* Dark text for readability */
 }
 img{
 width: 300px;
@@ -20,12 +20,12 @@ border: 5px;
 
 a {
     text-decoration: none;
-    color: #0b233f; /* A professional blue accent */
+    color: #830372; /* A professional blue accent */
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #0a1b2e;
+    color: #791f4c;
 }
 
 /* --- Header & Navigation --- */
@@ -41,7 +41,7 @@ a:hover {
 .logo {
     font-size: 1.8em;
     font-weight: bold;
-    color: #1e2f41; /* Use the accent color for the lab name */
+    color: #e747aa; /* Use the accent color for the lab name */
     align-content: center;
 }
 
@@ -62,12 +62,12 @@ a:hover {
 }
 
 .main-nav a:hover {
-    color: #007bff;
+    color: #9c3970;
 }
 
 /* --- Hero Section (The main banner) --- */
 .hero-section {
-    background-color: #49964d;
+    background-color: #1d1410;
     padding: 100px 5%;
     text-align: center;
     margin-bottom: 40px;
