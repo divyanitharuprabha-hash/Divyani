@@ -21,12 +21,13 @@ const events = [
     description: "Explore the evolving landscape of cloud security threats and proactive defense strategies.",
     image: "images/cybersecurity.jpg"
   }
+  // ...you can add all other events here (same format)
 ];
 
 // ====== Generate Event Cards ======
 function loadEvents() {
   const container = document.getElementById('event-container');
-  container.innerHTML = ''; // clear container first
+  container.innerHTML = ''; // clear previous content
 
   events.forEach(event => {
     const card = document.createElement('div');
@@ -65,5 +66,5 @@ function loadEvents() {
   });
 }
 
-// ====== Run on Page Load ======
+// ====== Initialize ======
 document.addEventListener('DOMContentLoaded', loadEvents);
