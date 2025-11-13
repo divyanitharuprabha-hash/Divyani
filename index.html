@@ -1,27 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechCon 2025 Event Showcase</title>
-  <link rel="stylesheet" href="styles/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon 2025 Event Schedule</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="scripts/main.js"></script>
+</body>
 </head>
-<body>
-  <header>
-    <h1>TechCon 2025 Event Schedule</h1>
-  </header>
+<body data-theme="light">
+    <header>
+        <div class="header-content">
+            <h1>TechCon 2025 Event Schedule</h1>
+            <button id="theme-toggle" aria-label="Toggle Dark or Light Mode">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+        </div>
+        <nav class="controls">
+            <input type="text" id="search-input" placeholder="Search by title or description..." aria-label="Search events">
+            
+            <div id="filter-container">
+                <button class="filter-btn active" data-filter="All" aria-pressed="true">All Events</button>
+                <button class="filter-btn" data-filter="Keynote" aria-pressed="false">Keynotes</button>
+                <button class="filter-btn" data-filter="Talk" aria-pressed="false">Talks</button>
+                <button class="filter-btn" data-filter="Workshop" aria-pressed="false">Workshops</button>
+                <button class="filter-btn" data-filter="Panel" aria-pressed="false">Panels</button>
+                <button class="filter-btn" data-filter="Social" aria-pressed="false">Socials</button>
+            </div>
+        </nav>
+    </header>
 
-  <main>
-    <section id="event-container">
-      <!-- Event cards will be dynamically inserted here -->
-    </section>
-  </main>
+    <main>
+        <p id="a11y-status" class="sr-only" aria-live="polite"></p>
 
-  <footer>
-    <p>© 2025 TechCon. All rights reserved.</p>
-  </footer>
+        <section id="event-container" class="card-grid"></section>
+        
+        <p id="no-results" style="display: none; text-align: center; font-size: 1.2rem; margin-top: 40px;">No events match your current search or filter criteria.</p>
+    </main>
 
-  <script src="scripts/main.js"></script>
+    <footer>
+        <p>&copy; 2025 TechCon. All rights reserved. Built by Student No. GWU/BHBT/2022/67</p>
+    </footer>
+
+    <script src="styles/scripts/main.js"></script>
 </body>
 </html>
