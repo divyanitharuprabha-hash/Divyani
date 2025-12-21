@@ -1,6 +1,6 @@
-/* --- Level 1: Reset and Custom Fonts --- */
+
 :root {
-    /* Level 1: Color Scheme */
+    
     --clr-primary: #007bff;
     --clr-secondary: #6c757d;
     --clr-bg-light: #f4f7f9;
@@ -9,7 +9,7 @@
     --clr-text-secondary-light: #555;
     --clr-border-light: #e0e0e0;
 
-    /* Dark Mode Variables (Will be overridden by [data-theme="dark"]) */
+    
     --clr-bg: var(--clr-bg-light);
     --clr-bg-card: var(--clr-bg-card-light);
     --clr-text: var(--clr-text-light);
@@ -24,7 +24,7 @@
     --space-lg: 24px;
 }
 
-/* Level 3: Dark Mode Colors */
+
 [data-theme="dark"] {
     --clr-bg-dark: #1e1e1e;
     --clr-bg-card-dark: #2c2c2c;
@@ -51,10 +51,10 @@ body {
     background-color: var(--clr-bg);
     color: var(--clr-text);
     line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s; /* Smooth theme transition */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-/* --- Header and Navigation --- */
+
 header {
     background-color: var(--clr-bg-card);
     border-bottom: 1px solid var(--clr-border);
@@ -78,7 +78,7 @@ h1 {
     color: var(--clr-primary);
 }
 
-/* Theme Toggle Button */
+
 #theme-toggle {
     background: none;
     border: 2px solid var(--clr-primary);
@@ -105,14 +105,14 @@ h1 {
 }
 
 
-/* Controls Container (Search and Filters) */
+
 .controls {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
 }
 
-/* Level 7: Search Input */
+
 #search-input {
     width: 100%;
     padding: var(--space-sm) var(--space-md);
@@ -129,7 +129,7 @@ h1 {
     outline: none;
 }
 
-/* Level 2: Filter Buttons */
+
 #filter-container {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +153,7 @@ h1 {
 
 .filter-btn.active {
     background-color: var(--clr-primary);
-    color: var(--clr-bg-card-light); /* Always use a light text color for primary button */
+    color: var(--clr-bg-card-light); 
     font-weight: 700;
 }
 
@@ -162,39 +162,38 @@ h1 {
     outline-offset: 2px;
 }
 
-/* --- Main Content and Grid Layout --- */
+
 main {
     padding: var(--space-lg) 5%;
 }
 
-/* Core Requirement: Responsive Grid Layout */
+
 .card-grid {
     display: grid;
     gap: var(--space-lg);
-    grid-template-columns: 1fr; /* Default: Single column for mobile */
+    grid-template-columns: 1fr; 
     margin-top: var(--space-lg);
 }
 
-/* Desktop/Tablet Layout: Multi-column grid */
+
 @media (min-width: 768px) {
     .card-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Level 1: Responsive 2-3 columns */
-    }
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     .controls {
         flex-direction: row;
         justify-content: space-between;
     }
     #search-input {
-        width: 300px; /* Limit search width on desktop */
+        width: 300px; 
     }
 }
 
-/* --- Event Card Styling --- */
+
 .event-card {
     background-color: var(--clr-bg-card);
     border-radius: 10px;
     overflow: hidden;
-    /* Level 1: Subtle box-shadow for lift and transition for hover/animation */
+    
     box-shadow: 0 4px 12px var(--clr-box-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease, scale 0.4s ease;
     display: flex;
@@ -202,17 +201,17 @@ main {
     min-height: 100%;
 }
 
-/* Level 1: Card Hover Effect */
+
 .event-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px var(--clr-box-shadow);
 }
 
-/* Level 8: Animation Classes for filtering */
+
 .fade-out {
     opacity: 0 !important;
     transform: scale(0.9) !important;
-    pointer-events: none; /* Disable interaction during fade */
+    pointer-events: none; 
 }
 
 .fade-in {
@@ -250,7 +249,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
-    margin-top: auto; /* Push metadata to the bottom */
+    margin-top: auto; 
     padding-top: var(--space-md);
     border-top: 1px dashed var(--clr-border);
 }
@@ -269,9 +268,9 @@ main {
     color: var(--clr-text-secondary);
 }
 
-/* Countdown & Mark Styling */
+
 .countdown {
-    color: #dc3545; /* Red for urgency */
+    color: #dc3545; 
     font-weight: 700;
 }
 .past-event {
@@ -280,15 +279,15 @@ main {
     font-weight: 400;
 }
 
-/* Level 7: Highlighted text from search */
+
 mark {
-    background-color: #ffc107; /* Bright yellow highlight */
+    background-color: #ffc107; 
     color: var(--clr-text);
     padding: 0 2px;
     border-radius: 2px;
 }
 
-/* Level 5: Add to Calendar Button */
+
 .btn-calendar {
     margin-top: var(--space-md);
     padding: var(--space-sm) var(--space-md);
@@ -309,7 +308,7 @@ mark {
     outline-offset: 2px;
 }
 
-/* --- Footer --- */
+
 footer {
     text-align: center;
     padding: var(--space-md) 5%;
@@ -319,7 +318,7 @@ footer {
     background-color: var(--clr-bg-card);
 }
 
-/* Level 9: Screen Reader Only Class */
+
 .sr-only {
     position: absolute;
     width: 1px;

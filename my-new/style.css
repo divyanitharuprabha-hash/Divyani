@@ -1,0 +1,150 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #abb8b5 0%, #28c564 100%);
+    --accent: #ffe66d;
+    --dark: #2d3436;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #acd477;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.small-round-photo {
+    /* Size - change both to make it bigger or smaller */
+    width: 200px; 
+    height: 200px;
+    
+    /* Shape */
+    border-radius: 50%; 
+    object-fit:cover; /* This prevents the photo from looking stretched */
+    
+    /* Decoration */
+    border: 4px solid #ffe66d; /* Beautiful yellow border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    
+    /* Floating Animation */
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Floating Animation Logic */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); } /* Moves up slightly */
+    100% { transform: translateY(0px); }
+}
+/* Header & Typing Animation */
+header {
+    height: 70vh;
+    background: var(--primary-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.welcome-text { opacity: 0; animation: fadeIn 1s forwards; }
+
+.name-animation {
+    font-size: 3.5rem;
+    border-right: 3px solid var(--accent);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(25) forwards, blink 0.7s infinite;
+}
+
+.name { color: var(--accent); }
+
+.fade-in-text { opacity: 0; animation: fadeIn 1s forwards 3.2s; }
+
+@keyframes typing { from { width: 0 } to { width: 100% } }
+@keyframes blink { 50% { border-color: transparent } }
+@keyframes fadeIn { to { opacity: 1; } }
+
+/* Main Layout */
+.container { max-width: 1100px; margin: 0 auto; padding: 50px 20px; }
+.section-title { text-align: center; font-size: 2.5rem; margin-bottom: 10px; }
+.instruction { text-align: center; color: #888; margin-bottom: 40px; }
+
+/* Skills Card Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.skill-card:hover { transform: translateY(-10px); background: #f1f3ff; }
+.icon { font-size: 3rem; margin-bottom: 15px; }
+
+/* Detail Box */
+#detail-box {
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    border-left: 10px solid #764ba2;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: slideUp 0.5s ease;
+}
+
+.hidden { display: none; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Flowing Photo Slider */
+.photo-slider {
+    margin-top: 50px;
+    overflow: hidden;
+    padding: 20px 0;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.photo-track {
+    display: flex;
+    width: calc(300px * 10);
+    animation: scroll 25s linear infinite;
+}
+
+.photo-track:hover { animation-play-state: paused; }
+
+.slide { width: 300px; padding: 10px; }
+.slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-300px * 5)); }
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 80px;
+}

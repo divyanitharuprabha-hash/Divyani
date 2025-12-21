@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyani Tharuprabha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        
+        <div class="hero-content">
+            <div class="profile-container">
+             <img src="me.jpeg" alt="Divyani" class="small-round-photo">
+</div>
+<br>
+        </div>
+            <h2 class="welcome-text">Hello,</h2>
+            <h1 class="name-animation">I'm <span class="name">Divyani Tharuprabha</span></h1>
+            <br>
+            <p class="fade-in-text">Undergraduate | Banking Intern | UI/UX Explorer</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="journey">
+            <h2 class="section-title">My Journey & Skills</h2>
+            <p class="instruction">Click a card to see my details</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card" onclick="showDetail('undergrad')">
+                    <img src="uni1.jpeg" alt="Divyani" class="small-round-photo">
+                    <div class="icon">🎓</div>
+                    <h3>Undergraduate</h3>
+                    
+                </div>
+                <div class="skill-card" onclick="showDetail('banking')">
+                    <img src="uni2.jpeg" alt="Divyani" class="small-round-photo">
+                    <div class="icon">🏦</div>
+                    <h3>Banking Intern</h3>
+                </div>
+                <div class="skill-card" onclick="showDetail('ui-design')">
+                    <img src="uni3.jpeg" alt="Divyani" class="small-round-photo">
+                    <div class="icon">🎨</div>
+                    <h3>UI Design</h3>
+                </div>
+            </div>
+
+            <div id="detail-box" class="hidden">
+                
+                <h3 id="detail-title"></h3>
+                <p id="detail-description"></p>
+                
+                
+
+            </div>
+        </section>
+
+        <section class="photography-section">
+            <h2 class="section-title">Travel & Photography</h2>
+            <div class="photo-slider">
+                <div class="photo-track">
+                    <div class="slide"><img src="travel1.jpeg" alt="Travel 1"></div>
+                    <div class="slide"><img src="travel2.jpeg" alt="Travel 2"></div>
+                    <div class="slide"><img src="travel3.jpeg" alt="Travel 3"></div>
+                    <div class="slide"><img src="travel4.jpeg" alt="Travel 4"></div>
+                    <div class="slide"><img src="travel5.jpeg" alt="Travel 5"></div>
+                    <div class="slide"><img src="travel1.jpeg" alt="Travel 1"></div>
+                    <div class="slide"><img src="travel2.jpeg" alt="Travel 2"></div>
+                    <div class="slide"><img src="travel3.jpeg" alt="Travel 3"></div>
+                    <div class="slide"><img src="travel4.jpeg" alt="Travel 4"></div>
+                    <div class="slide"><img src="travel5.jpwg" alt="Travel 5"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Let's Connect</h2>
+        <div class="contact-info">
+            <p>📧 Email: divyanitharuprabha @gmail.com</p>
+            <p>🔗 LinkedIn- Divyani Tharuprabha| Instagram-divyani_tharuprabha_| Contact No- +94 717075508</p>
+        </div>
+        <p class="copyright">&copy; 2025 Divyani Tharuprabha</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

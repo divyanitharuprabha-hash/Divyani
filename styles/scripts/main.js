@@ -1,4 +1,4 @@
-// The single source of truth for your event data
+// The singl
 const events = [
     // --- Day 1: Nov 20, 2025 ---
     {
@@ -111,7 +111,7 @@ const events = [
         image: "imagess/15.png"
     },
 
-    // --- Bonus / Past Events for testing ---
+    
     {
         title: "Pre-Conference Hackathon",
         type: "Social",
