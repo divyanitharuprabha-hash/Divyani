@@ -3,88 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divyani Tharuprabha | Portfolio</title>
+    <title>Divyani Tharuprabha | Biomedical Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        
-        <div class="hero-content">
-            <div class="profile-container">
-             <img src="me.jpeg" alt="Divyani" class="small-round-photo">
-</div>
-<br>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Welcome To My Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-            <h2 class="welcome-text">Hello,</h2>
-            <h1 class="name-animation">I'm <span class="name">Divyani Tharuprabha</span></h1>
-            <br>
-            <p class="fade-in-text">Undergraduate | Banking Intern | UI/UX Explorer</p>
+    </nav>
+
+    <header class="hero">
+        <div class="profile-container">
+            <img src="me.jpeg" alt="Divyani Tharuprabha" class="profile-img">
         </div>
+        <h1>Hi, I'm Divyani Tharuprabha</h1>
+        <p>Undergraduate Student | Biomedical Technology | UI Designer</p>
     </header>
 
     <main class="container">
-        <section class="journey">
-            <h2 class="section-title">My Journey & Skills</h2>
-            <p class="instruction">Click a card to see my details</p>
-            
-            <div class="skills-grid">
-                <div class="skill-card" onclick="showDetail('undergrad')">
-                    <img src="uni1.jpeg" alt="Divyani" class="small-round-photo">
-                    <div class="icon">🎓</div>
-                    <h3>Undergraduate</h3>
-                    
+        
+        <section id="education" class="card-section">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-item">
+                <img src="uni.jpeg" alt="Education Photo" class="edu-feature-img">
+                <div class="edu-info">
+                    <h3>Undergraduate in Biomedical Technology</h3>
+                    <p class="university">Gampaha Wickkramarachchi University Of Indigenous Medicine • 2022/23</p>
+                    <p class="bio-desc">
+                        Studying the intersection of Healthcare and Technology. My curriculum covers 
+                        <strong>Human Anatomy, Medical Electronics, Biotechnology, ICT </strong> and 
+                        <strong>Instrumentation</strong>. I focus on bridging clinical needs with 
+                        innovative technical solutions.
+                    </p>
+                    <div class="subjects-grid">
+                        <span class="subject-tag">Anatomy</span>
+                        <span class="subject-tag">Electronics</span>
+                        <span class="subject-tag">3D Modeling</span>
+                        <span class="subject-tag">Instrumentation</span>
+                        <span class="subject-tag">Biotech</span>
+                    </div>
                 </div>
-                <div class="skill-card" onclick="showDetail('banking')">
-                    <img src="uni2.jpeg" alt="Divyani" class="small-round-photo">
-                    <div class="icon">🏦</div>
-                    <h3>Banking Intern</h3>
-                </div>
-                <div class="skill-card" onclick="showDetail('ui-design')">
-                    <img src="uni3.jpeg" alt="Divyani" class="small-round-photo">
-                    <div class="icon">🎨</div>
-                    <h3>UI Design</h3>
-                </div>
-            </div>
-
-            <div id="detail-box" class="hidden">
-                
-                <h3 id="detail-title"></h3>
-                <p id="detail-description"></p>
-                
-                
-
             </div>
         </section>
 
-        <section class="photography-section">
-            <h2 class="section-title">Travel & Photography</h2>
-            <div class="photo-slider">
-                <div class="photo-track">
-                    <div class="slide"><img src="travel1.jpeg" alt="Travel 1"></div>
-                    <div class="slide"><img src="travel2.jpeg" alt="Travel 2"></div>
-                    <div class="slide"><img src="travel3.jpeg" alt="Travel 3"></div>
-                    <div class="slide"><img src="travel4.jpeg" alt="Travel 4"></div>
-                    <div class="slide"><img src="travel5.jpeg" alt="Travel 5"></div>
-                    <div class="slide"><img src="travel1.jpeg" alt="Travel 1"></div>
-                    <div class="slide"><img src="travel2.jpeg" alt="Travel 2"></div>
-                    <div class="slide"><img src="travel3.jpeg" alt="Travel 3"></div>
-                    <div class="slide"><img src="travel4.jpeg" alt="Travel 4"></div>
-                    <div class="slide"><img src="travel5.jpwg" alt="Travel 5"></div>
+        <section id="skills" class="card-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <img src="1.jpeg" alt="HTML CSS">
+                    <span>HTML & CSS</span>
+                </div>
+                <div class="skill-box">
+                    <img src="2.jpeg" alt="JS">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-box">
+                    <img src="3.jpeg" alt="AutoCAD">
+                    <span>AutoCAD & 3D Modeling</span>
+                </div>
+                <div class="skill-box">
+                    <img src="4.jpeg" alt="UI Design">
+                    <span>UI Design (Beginner)</span>
                 </div>
             </div>
+        </section>
+
+        <section id="projects" class="card-section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="img-wrapper">
+                        <img src="emg.jpeg" alt="EMG Project">
+                        <div class="project-overlay">
+                            <h3>EMG Circuit Design</h3>
+                            <p>Instrumentation project focused on bio-signal amplification.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="img-wrapper">
+                        <img src="ux.jpeg" alt="UI Project">
+                        <div class="project-overlay">
+                            <h3>Modern UI Design</h3>
+                            <p>Interface prototyping for medical applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="card-section contact-center">
+            <h2 class="section-title">Contact</h2>
+            <p>Interested in Biomedical Internships </p>
+            <a href="divyanitharuprabha@gmail.com" class="contact-btn">Get In Touch</a>
         </section>
     </main>
-
-    <footer>
-        <h2>Let's Connect</h2>
-        <div class="contact-info">
-            <p>📧 Email: divyanitharuprabha @gmail.com</p>
-            <p>🔗 LinkedIn- Divyani Tharuprabha| Instagram-divyani_tharuprabha_| Contact No- +94 717075508</p>
-        </div>
-        <p class="copyright">&copy; 2025 Divyani Tharuprabha</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
