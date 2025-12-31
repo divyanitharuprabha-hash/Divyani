@@ -1,4 +1,4 @@
-// Navbar background shift
+
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Staggered Animation Delays for Skills
+
 const skills = document.querySelectorAll('.skill-box img');
 skills.forEach((img, index) => {
     img.style.animationDelay = `${index * 0.5}s`;
