@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tele-Steth | IoT Remote Healthcare</title>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <div class="logo">🩺 Tele-Steth <span>Digital</span></div>
+            <nav>
+                <button class="nav-btn" onclick="showTab('patient')">Patient Portal</button>
+                <button class="nav-btn" onclick="showTab('doctor')">Doctor Portal</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="patient-tab" class="tab-content active">
+                <div class="card">
+                    <h2>Patient Instructions</h2>
+                    <ul class="instructions">
+                        <li>🔌 <b>Connect:</b> Plug the microphone/stethoscope into your USB port.</li>
+                        <li>📍 <b>Placement:</b> Place the diaphragm firmly against your bare chest.</li>
+                        <li>🤫 <b>Quiet:</b> Stay calm and do not speak during the session.</li>
+                    </ul>
+                    <div class="connection-box">
+                        <p>Your Connection ID: <strong id="my-id">...loading...</strong></p>
+                        <p class="hint">Give this ID to your doctor so they can listen.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="doctor-tab" class="tab-content">
+                <div class="card doctor-card">
+                    <h2>Clinical Diagnostic Monitor</h2>
+                    
+                    <div class="visualizer-container">
+                        <canvas id="visualizer"></canvas>
+                        <div class="waveform-label">PHONOCARDIOGRAM (PCG)</div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="label">Heart Rate</span>
+                            <div id="bpm-display">-- BPM</div>
+                            <div id="health-status">Awaiting Signal</div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="label">Primary Frequency</span>
+                            <div id="freq-display">0 Hz</div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <input type="text" id="peer-id-input" placeholder="Enter Patient ID">
+                        <button class="btn-primary" id="connect-btn">Connect & Listen</button>
+                        <p id="conn-status">Status: Disconnected</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
