@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Telemedicine Monitoring System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<header>
+<h1>Remote Patient Monitoring System</h1>
+</header>
+
+<div class="tab-buttons">
+<button onclick="showTab('patientTab')">Patient</button>
+<button onclick="showTab('doctorTab')">Doctor</button>
+</div>
+
+<!-- PATIENT TAB -->
+<div id="patientTab" class="tab patient-bg">
+
+<h2>Patient Monitoring</h2>
+
+<input type="text" id="patientID" placeholder="Enter Patient ID">
+
+<div class="instructions">
+
+<h3>Instructions</h3>
+
+<p>1. Sit calmly and relax your body.</p>
+
+<p>2. Place the microphone on the left chest for heart and lung sound.</p>
+<img src="mic_position.png">
+
+<p>3. Attach ECG electrodes correctly.</p>
+<img src="ecg_position.png">
+
+<p>4. Attach EMG electrodes on the muscle area.</p>
+<img src="emg_position.png">
+
+<p>5. Wear the blood pressure cuff on the upper arm.</p>
+<img src="bp_position.png">
+
+</div>
+
+<button onclick="startMonitoring()">Start Monitoring</button>
+
+</div>
+
+
+<!-- DOCTOR TAB -->
+<div id="doctorTab" class="tab doctor-bg hidden">
+
+<h2>Doctor Dashboard</h2>
+
+<input type="text" id="doctorPatientID" placeholder="Enter Patient ID">
+
+<button onclick="loadPatient()">Load Patient Data</button>
+
+<h3>Patient ID: <span id="displayID">None</span></h3>
+
+<div class="data-box">
+
+<h3>Heart Sound</h3>
+<audio controls id="heartAudio"></audio>
+
+</div>
+
+<div class="data-box">
+
+<h3>Lung Sound</h3>
+<audio controls id="lungAudio"></audio>
+
+</div>
+
+<div class="data-box">
+
+<h3>ECG Signal</h3>
+<canvas id="ecgChart"></canvas>
+
+</div>
+
+<div class="data-box">
+
+<h3>EMG Signal</h3>
+<canvas id="emgChart"></canvas>
+
+</div>
+
+<div class="data-box">
+
+<h3>Blood Pressure</h3>
+
+<p>Systolic: <span id="sys">120</span> mmHg</p>
+<p>Diastolic: <span id="dia">80</span> mmHg</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

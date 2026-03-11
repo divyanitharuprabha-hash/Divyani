@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2 {
+  color: #1f4fd8;
+}
+
+.button-group button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #1f4fd8;
+  color: white;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.step {
+  text-align: left;
+}
+
+.waveform {
+  height: 120px;
+  border: 2px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+.status {
+  background: #e0ffe6;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #1f4fd8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.back {
+  background: #777;
+  margin-top: 20px;
+}
+
+

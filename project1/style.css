@@ -1,0 +1,99 @@
+body{
+font-family:Arial;
+margin:0;
+text-align:center;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.patient-bg{
+    background-image: url("patient.jpg");
+    background-size: cover;
+}
+
+.doctor-bg{
+    background-image: url("doc.webp");
+    background-size: cover;
+}
+}
+
+.content{
+background: rgba(255,255,255,0.8);
+padding:20px;
+border-radius:10px;
+}
+
+header{
+background:#527db4;
+color:white;
+padding:20px;
+}
+
+.tab-buttons{
+margin:20px;
+}
+
+.tab-buttons button{
+padding:10px 20px;
+margin:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.tab{
+padding:30px;
+min-height:600px;
+}
+
+.hidden{
+display:none;
+}
+
+/* PATIENT BACKGROUND */
+
+.patient-bg{
+background-image:url("patient_background.jpg");
+background-size:cover;
+background-position:center;
+}
+
+/* DOCTOR BACKGROUND */
+
+.doctor-bg{
+background-image:url("doctor_background.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.instructions{
+background:white;
+padding:20px;
+border-radius:10px;
+margin:20px auto;
+width:60%;
+}
+
+.instructions img{
+width:200px;
+margin:10px;
+}
+
+.data-box{
+background:white;
+padding:20px;
+margin:20px auto;
+border-radius:10px;
+width:60%;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+canvas{
+background:#eee;
+width:100%;
+height:200px;
+}

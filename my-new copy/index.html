@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Stethoscope Telemedicine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME -->
+<div id="home" class="container">
+  <h1>🩺 Digital Stethoscope System</h1>
+  <p>Select your role</p>
+
+  <div class="button-group">
+    <button onclick="openDoctor()">Doctor</button>
+    <button onclick="openPatient()">Patient</button>
+  </div>
+</div>
+
+<!-- DOCTOR TAB -->
+<div id="doctorUI" class="container hidden">
+  <h2>👨‍⚕️ Doctor Dashboard</h2>
+
+  <div class="card">
+    <h3>Patient Heart & Lung Signals</h3>
+    <div class="waveform">[ Waveform Display Here ]</div>
+  </div>
+
+  <div class="card">
+    <h3>Live Audio</h3>
+    <button>▶ Play Heart Sound</button>
+    <button>▶ Play Lung Sound</button>
+  </div>
+
+  <button class="back" onclick="goHome()">⬅ Back</button>
+</div>
+
+<!-- PATIENT TAB -->
+<div id="patientUI" class="container hidden">
+  <h2>🧍 Patient Interface</h2>
+
+  <div class="status">
+    🟢 Connected to Doctor
+  </div>
+
+  <!-- STEP 1 -->
+  <div class="card step">
+    <h3>Step 1: Sit Comfortably</h3>
+    <p>
+      ✅ Sit or lie down comfortably<br>
+      ❌ Do not talk<br>
+      ❌ Do not move<br>
+      🌬 Breathe normally
+    </p>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="card step">
+    <h3>Step 2: Place the Sensor</h3>
+    <p>
+      ❤️ Heart: Left side of chest<br>
+      🫁 Lungs: Upper chest or back<br>
+      📌 Keep the sensor flat and still
+    </p>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="card step">
+    <h3>Step 3: Start Recording</h3>
+    <button id="recordBtn" onclick="toggleRecording()">▶ Start Recording</button>
+    <p id="recordStatus">Waiting...</p>
+  </div>
+
+  <!-- WAVEFORM -->
+  <div class="card">
+    <h3>Live Signal</h3>
+    <div class="waveform">[ Live Heart / Lung Waveform ]</div>
+  </div>
+
+  <button class="back" onclick="goHome()">⬅ Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
